@@ -1,22 +1,64 @@
-td {
-    vertical-align: top;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
-.container {
-    padding: 20px;
-    background-color: antiquewhite;
+
+body {
+    background-color: #f8efe4;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+a {
+    color: #082701;
+}
+
+a:hover {
+    color: #22ac03;
+}
+
+.wrapper {
+    padding: 50px;
+
+    @media screen and (max-width: 768px) {
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 576px) {
+        padding: 20px 10px;
+    }
+}
+
+.header {
+    background-color: #a9caa5;
 }
 
 .my-name {
-    text-align: center;
-    margin-bottom: 25px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
-.my-photo {
-    display:block;
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
+.position {
+    margin-bottom: 10px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.flex-item--left {
+    border-right: black solid 2px;
+    padding-right: 10px;
+    min-width: 125px;
+    width: 25%;
+}
+
+.flex-item--right {
+    padding-left: 20px;
+    width: 75%;
 }
 
 .about-me {
@@ -25,20 +67,46 @@ td {
     font-size: 18px;
 }
 
-.main-information-header {
-    padding-top:10px;
-    padding-bottom: 5px;
-    font-size: 18px;
-    text-align: left;
+.section-title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.subtitle {
+    font-size: 17px;
+    margin: 10px 0 5px;
+    line-height: 1.5;
+}
+
+.skills-list, .language-list, .duties-list, .contact-details {
+    line-height: 1.5;
+}
+
+.dates {
+    font-style: italic;
 }
 
 .contacts {
-    background-color: #b9ead9;
-    line-height: 25px;
+    background-color: #a9caa5;
 }
 
 .contact-details {
-    margin-bottom: 0;
-    padding-top: 10px;
-    padding-left: 20px;
+    list-style: none;
+}
+
+.contact-details--container {
+    margin: 0 auto;
+}
+
+.contact-details--footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details--header {
+    display: inline-block;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: left;
 }
