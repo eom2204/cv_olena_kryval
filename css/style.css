@@ -64,7 +64,7 @@ a:hover {
 }
 
 .project-image {
-    width: 100%;
+    width: fit-content;
     height: auto;
     cursor: pointer;
     transition: transform .3s;
